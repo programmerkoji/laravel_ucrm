@@ -18,7 +18,7 @@ use App\Http\Controllers\ItemController;
 |
 */
 
-Route::resource('items', ItemController::class)
+Route::resource('/items', ItemController::class)
     ->middleware(['auth', 'verified']);
 
 Route::get('/inertia-test', function () {
